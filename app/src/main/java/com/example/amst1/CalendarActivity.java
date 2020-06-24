@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.CalendarView;
 import android.widget.TextView;
 
-public class Calendarview extends AppCompatActivity {
+public class CalendarActivity extends AppCompatActivity {
     // Se definen dos tipos de variables, la del calendario y la fecha
     CalendarView calendarView;
     TextView date_view;
@@ -15,7 +15,7 @@ public class Calendarview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendarview);
+        setContentView(R.layout.activity_calendar);
 
         calendarView = (CalendarView)
                 findViewById(R.id.Calendarview);

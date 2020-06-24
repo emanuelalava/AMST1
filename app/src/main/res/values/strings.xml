@@ -2,4 +2,5 @@
     <string name="app_name">AMST1</string>
     <string name="title_activity_mapa">Map</string>
     <string name="maps">Maps</string>
+    <string name="selecciona_una_fecha">Selecciona una fecha</string>
 </resources>

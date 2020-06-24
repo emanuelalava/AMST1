@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toCalendar(View view){
-        Intent i = new Intent(MainActivity.this,Calendarview.class);
+        Intent i = new Intent(MainActivity.this,CalendarActivity.class);
         startActivity(i);
     }
 
