@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-//    public void toMaps(View view){
-//        Intent i = new Intent(MainActivity.this,XXXXXXXX.class);
-//        startActivity(i);
-//    }
+    public void toMaps(View view){
+        Intent i = new Intent(MainActivity.this,MapaActivity.class);
+        startActivity(i);
+    }
 
 //    public void toBotonFlotante(View view){
 //        Intent i = new Intent(MainActivity.this,XXXXXXX.class);
