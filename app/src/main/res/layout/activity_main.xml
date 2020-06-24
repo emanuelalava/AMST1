@@ -60,6 +60,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/button_border"
+        android:onClick="toCalendar"
         android:text="Calendar"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />

@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-//    public void toCalendar(View view){
-//        Intent i = new Intent(MainActivity.this,XXXXXX.class);
-//        startActivity(i);
-//    }
+    public void toCalendar(View view){
+        Intent i = new Intent(MainActivity.this,Calendarview.class);
+        startActivity(i);
+    }
 
 //    public void toMaps(View view){
 //        Intent i = new Intent(MainActivity.this,XXXXXXXX.class);
