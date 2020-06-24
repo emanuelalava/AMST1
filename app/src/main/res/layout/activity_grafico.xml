@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".GraficoActivity">
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
@@ -20,7 +19,6 @@
         android:textSize="36sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-condensed-medium" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
@@ -34,14 +32,11 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-condensed-medium" />
-
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/lineChart"
         android:layout_width="match_parent"
         android:layout_height="200dp">
-
     </com.github.mikephil.charting.charts.LineChart>
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"

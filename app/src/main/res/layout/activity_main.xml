@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +15,6 @@
         android:textColor="#CDDC39"
         android:textSize="30sp"
         android:textStyle="bold" />
-
     <Button
         android:id="@+id/videoViewBtn"
         android:layout_width="match_parent"
@@ -31,7 +29,6 @@
         android:textColor="#FF224E"
         android:textStyle="bold"
         tools:text="Video View" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
@@ -44,7 +41,6 @@
         android:text="Lineal Chart"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />
-
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
@@ -56,7 +52,6 @@
         android:text="Maps"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />
-
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
@@ -68,5 +63,4 @@
         android:text="Calendar"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />
-
 </LinearLayout>
