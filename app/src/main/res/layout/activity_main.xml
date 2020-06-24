@@ -41,15 +41,17 @@
         android:text="Lineal Chart"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />
+
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnMapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/button_border"
-        android:text="Maps"
+        android:onClick="toMaps"
+        android:text="@string/maps"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />
     <Button
