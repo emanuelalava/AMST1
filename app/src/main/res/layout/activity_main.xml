@@ -10,41 +10,63 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         android:padding="20dp"
-        android:text="Bienvenido somos grupo 1"
-        android:textColor="#2196F3"
-        android:textSize="24sp"
+        android:text="BIENVENIDO, SOMOS EL GRUPO 1"
+        android:textColor="#CDDC39"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/videoViewBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_border"
         android:onClick="toVideoView"
+        android:shadowColor="#FFFFFF"
+        android:text="Video View"
+        android:textColor="#FF224E"
+        android:textStyle="bold"
         tools:text="Video View" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_border"
         android:onClick="toGrafico"
-        android:text="Lineal Chart" />
+        android:text="Lineal Chart"
+        android:textColor="#FFFF224E"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
-        android:text="Maps" />
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_border"
+        android:text="Maps"
+        android:textColor="#FFFF224E"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
-        android:text="Calendar" />
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_border"
+        android:text="Calendar"
+        android:textColor="#FFFF224E"
+        android:textStyle="bold" />
 
 </LinearLayout>
