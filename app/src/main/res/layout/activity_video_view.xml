@@ -34,12 +34,12 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-condensed-medium" />
-
-    <VideoView
-        android:id="@+id/videoView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_weight="1" />
-
+        android:layout_height="wrap_content" >
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 </LinearLayout>

@@ -13,11 +13,12 @@ public class VideoViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_view);
-
-        VideoView videoView = (VideoView)findViewById(R.id.videoView);
+        // Instanciando el objeto VideoView
+        VideoView videoView =(VideoView)findViewById(R.id.videoView);
         MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
-        Uri uri=Uri.parse("rtsp://r6---sn-4g5e6nlk.googlevideo.com/Cj0LENy73wIaNAm9Pw3umbhMnhMYESARFC3XzfJeMOCoAUIASARgrqWbyveP54RcigELRDUyNTJEdGluUEEM/0B03BADD7E3C0E7FD2664AE4BC7E36AED48C3AB5.E0FB493C98B6E851411420B1D2882E1510A3D75B/yt8/1/video.3gp");
+        String url = "android.resource://"+ getPackageName() +"/"+R.raw.top;
+        Uri uri=Uri.parse(url);
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);
         videoView.requestFocus();
