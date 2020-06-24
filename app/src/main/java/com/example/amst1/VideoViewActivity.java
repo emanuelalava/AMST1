@@ -14,16 +14,13 @@ public class VideoViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_view);
         // Instanciando el objeto VideoView
-        VideoView videoView = (VideoView)findViewById(R.id.videoView);
-        // Instanciando manejo de medios
+        VideoView videoView =(VideoView)findViewById(R.id.videoView);
         MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
-        // Obteniendo la URI del CDN de youtube
-        Uri uri=Uri.parse("rtsp://r6---sn-4g5e6nlk.googlevideo.com/Cj0LENy73wIaNAm9Pw3umbhMnhMYESARFC3XzfJeMOCoAUIASARgrqWbyveP54RcigELRDUyNTJEdGluUEEM/0B03BADD7E3C0E7FD2664AE4BC7E36AED48C3AB5.E0FB493C98B6E851411420B1D2882E1510A3D75B/yt8/1/video.3gp");
+        Uri uri=Uri.parse("rtsp://r6---sn-4g5e6nlk.googlevideo.com/Cj0LENy73wIaNAm9Pw3umbhMnhMYESARFC1khfNeMOCoAUIASARgrqWbyveP54RcigELRDUyNTJEdGluUEEM/5C431528468FACF940834E7E63093E6A31D99809.DC2A92E073D6FA520C0EDC46C570C22A7E22F70B/yt8/1/video.3gp");
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);
         videoView.requestFocus();
-        // Se inicia la reproducción
         videoView.start();
     }
 }

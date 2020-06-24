@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".VideoViewActivity">
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         android:textSize="36sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-condensed-medium" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -32,6 +34,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-condensed-medium" />
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
