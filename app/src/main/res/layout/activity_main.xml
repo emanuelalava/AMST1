@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         android:textColor="#CDDC39"
         android:textSize="30sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/videoViewBtn"
         android:layout_width="match_parent"
@@ -65,4 +67,5 @@
         android:text="Calendar"
         android:textColor="#FFFF224E"
         android:textStyle="bold" />
+
 </LinearLayout>
