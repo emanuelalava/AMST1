@@ -10,8 +10,10 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.github.clans.fab.FloatingActionMenu;
 
+public class MainActivity extends AppCompatActivity {
+    FloatingActionMenu flMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},1);
             }
         }
+
+        // Menu flotante
+        flMenu=(FloatingActionMenu)findViewById(R.id.flButtonMenu);
+        flMenu.setClosedOnTouchOutside(true);
     }
 
     public void toGrafico(View view){
@@ -39,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-//    public void toCalendar(View view){
-//        Intent i = new Intent(MainActivity.this,XXXXXX.class);
-//        startActivity(i);
-//    }
+    public void toCalendar(View view){
+        //Intent i = new Intent(MainActivity.this,CalendarActivity.class);
+       // startActivity(i);
+    }
 
     public void toMaps(View view){
         Intent i = new Intent(MainActivity.this,MapaActivity.class);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,65 +7,118 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:padding="20dp"
-        android:text="BIENVENIDO, SOMOS EL GRUPO 1"
-        android:textColor="#CDDC39"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_height="685dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/videoViewBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_border"
-        android:onClick="toVideoView"
-        android:shadowColor="#FFFFFF"
-        android:text="Video View"
-        android:textColor="#FF224E"
-        android:textStyle="bold"
-        tools:text="Video View" />
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_border"
-        android:onClick="toGrafico"
-        android:text="Lineal Chart"
-        android:textColor="#FFFF224E"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:padding="20dp"
+            android:text="BIENVENIDO, SOMOS EL GRUPO 1"
+            android:textColor="#CDDC39"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnMapa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_border"
-        android:onClick="toMaps"
-        android:text="@string/maps"
-        android:textColor="#FFFF224E"
-        android:textStyle="bold" />
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_border"
-        android:text="Calendar"
-        android:textColor="#FFFF224E"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/videoViewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:onClick="toVideoView"
+            android:shadowColor="#FFFFFF"
+            android:text="Video View"
+            android:textColor="#FF224E"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:onClick="toGrafico"
+            android:text="Lineal Chart"
+            android:textColor="#FFFF224E"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:onClick="toMaps"
+            android:text="@string/maps"
+            android:textColor="#FFFF224E"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:text="Calendar"
+            android:textColor="#FFFF224E"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/flButtonMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu_fab_label="Menu"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/flButtonImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="ImageView"
+                android:onClick="toGrafico"
+                android:src="@drawable/ic_image"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/flButtonVid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="VideoView"
+                android:onClick="toVideoView"
+                android:src="@drawable/ic_video"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/flButtonCalend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="CalendarView"
+                android:onClick="toCalendar"
+                android:src="@drawable/ic_calendar"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/flButtonMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="MapView"
+                android:onClick="toMaps"
+                android:src="@drawable/ic_map"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>>
+</androidx.constraintlayout.widget.ConstraintLayout>
